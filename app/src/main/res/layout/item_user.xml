@@ -1,0 +1,109 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/classUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/latUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/classUser"
+            android:layout_marginTop="15dp"
+            android:text="Latitude"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_cloud_upload_24"
+            android:layout_below="@id/classUser"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="15dp"
+            android:id="@+id/uploadData"
+            />
+
+
+        <TextView
+            android:id="@+id/longUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/classUser"
+            android:layout_marginTop="15dp"
+            android:text="Longitude"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/latUser"
+            />
+
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_below="@id/longUser"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round" />
+
+
+        <VideoView
+            android:id="@+id/exerciseVideo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_below="@id/longUser"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddForm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter your name"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+
+                />
+
+
+            <EditText
+                android:id="@+id/et_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_name"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Enter your class"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+
+
+                />
+
+            <Button
+                android:id="@+id/btnPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_class"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Photo" />
+
+
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@id/btnPhoto"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/iv_photo"
+                android:visibility="gone"
+                />
+
+
+            <VideoView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@id/btnVideo"
+                android:layout_marginTop="8dp"
+                android:id="@+id/iv_video"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/btnVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_class"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Video"
+
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Save" />
+
+</RelativeLayout>
